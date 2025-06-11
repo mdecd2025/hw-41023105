@@ -1,0 +1,73 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0944
+  position 0.0007741137314637293 0.0007741159203709444 283.7676303847088
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+      }
+      endPoint DEF base1 Solid {
+        children [
+          DEF joint2 HingeJoint {
+            jointParameters HingeJointParameters {
+            }
+            endPoint Solid {
+              boundingObject Mesh {
+              }
+            }
+          }
+          DEF base1 Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.7 0.9 0.2
+              }
+            }
+            geometry Mesh {
+              url [
+                "../../exam2-41023105/base1.stl"
+              ]
+            }
+          }
+        ]
+        name "base1"
+        boundingObject USE base1
+      }
+    }
+    DEF base2 Solid {
+      children [
+        DEF base2 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.7 0.9 0.2
+            }
+          }
+          geometry Mesh {
+            url [
+              "../../exam2-41023105/base1.stl"
+            ]
+          }
+        }
+      ]
+      name "base1(1)"
+      boundingObject USE base2
+    }
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+    }
+  ]
+}

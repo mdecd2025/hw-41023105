@@ -1,0 +1,157 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.5773502691896258 -0.5773502691896258 -0.5773502691896258 4.188785307179587
+  position 0.6699942092195291 0.9899942092031518 5.401946131259843
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  children [
+    DEF base Solid {
+      children [
+        CadShape {
+          url [
+            "../../obs/part_1.obj"
+          ]
+        }
+      ]
+      name "base"
+      boundingObject Mesh {
+        url [
+          "../../obs/part_1.obj"
+        ]
+      }
+    }
+    DEF joint1 HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+        anchor 0.9 0.22 0
+      }
+      device [
+        RotationalMotor {
+          name "motor"
+          maxVelocity 1000000
+          maxTorque 1000000
+        }
+      ]
+      endPoint DEF link1 Solid {
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.6 0.8 0.8
+              }
+            }
+            geometry Mesh {
+              url [
+                "../../obs/part_2.obj"
+              ]
+            }
+          }
+          DEF joint2 HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 0 2
+              anchor 1.1743 0.0986 0
+            }
+            endPoint DEF link2 Solid {
+              children [
+                Shape {
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 0.8 1 1
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../../obs/part_4.obj"
+                    ]
+                  }
+                }
+                DEF joint3 HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 0 0 1
+                    anchor 1.1307 0.697 0
+                  }
+                  endPoint DEF link3 Solid {
+                    children [
+                      Shape {
+                        appearance Appearance {
+                          material Material {
+                            diffuseColor 1 1 0.6
+                          }
+                        }
+                        geometry Mesh {
+                          url [
+                            "../../obs/part_3.obj"
+                          ]
+                        }
+                      }
+                    ]
+                    name "link3"
+                    boundingObject Mesh {
+                      url [
+                        "../../obs/part_3.obj"
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "link2"
+              boundingObject Mesh {
+                url [
+                  "../../obs/part_4.obj"
+                ]
+              }
+              physics Physics {
+              }
+            }
+          }
+        ]
+        name "link1"
+        boundingObject Mesh {
+          url [
+            "../../obs/part_2.obj"
+          ]
+        }
+      }
+    }
+    DEF joint4 HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+        anchor 1.35 0.68 0
+      }
+      endPoint SolidReference {
+        solidName "link3"
+      }
+    }
+  ]
+  controller "<none>"
+}
+DEF ball Solid {
+  translation 0.67 0.86 -0.26
+  children [
+    DEF ball Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0.3 0.8
+        }
+      }
+      geometry Sphere {
+        radius 0.1
+      }
+    }
+  ]
+  name "ball"
+  boundingObject USE ball
+  physics Physics {
+  }
+}

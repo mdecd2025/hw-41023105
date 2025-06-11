@@ -1,0 +1,168 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5756625609090297 0.5763826014911709 0.5799963040105752 2.089350153306623
+  position 9.353648580678886e-08 -0.03613428530341961 3.7618129078678875
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  translation -0.113055 0.00875144 0
+  children [
+    Solid {
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 1 1
+            }
+          }
+          geometry Mesh {
+            url [
+              "../split_parts/part_1.obj"
+            ]
+          }
+        }
+      ]
+      boundingObject Mesh {
+        url [
+          "../split_parts/part_1.obj"
+        ]
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 25.064812909444647
+        axis 0 0 1
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        rotation 0 0 1 0.45865698790588755
+        children [
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0 1 0
+              }
+            }
+            geometry Mesh {
+              url [
+                "../split_parts/part_3.obj"
+              ]
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              position -32.00876927154755
+              axis 0 0 1
+              anchor 0 0.4 0
+            }
+            endPoint Solid {
+              translation -0.22348678980288017 0.0682566269624007 0
+              rotation 0 0 -1 0.5928333500470441
+              children [
+                Shape {
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 1 1 1
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../split_parts/part_5.obj"
+                    ]
+                  }
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    position -0.04487424061920048
+                    axis 0 0 1
+                    anchor 0.4922 0.7582 0
+                  }
+                  endPoint Solid {
+                    translation 0.26642475406086874 -0.1171160702364169 0
+                    rotation 0 0 1 0.3233947593808013
+                    children [
+                      Shape {
+                        appearance Appearance {
+                          material Material {
+                            diffuseColor 1 1 0
+                          }
+                        }
+                        geometry Mesh {
+                          url [
+                            "../split_parts/part_7.obj"
+                          ]
+                        }
+                      }
+                      HingeJoint {
+                        jointParameters HingeJointParameters {
+                          position 0.031680611552968585
+                          axis 0 0 1
+                          anchor 1 0 0
+                        }
+                        endPoint SolidReference {
+                          solidName "<static environment>"
+                        }
+                      }
+                    ]
+                    boundingObject Mesh {
+                      url [
+                        "../split_parts/part_7.obj"
+                      ]
+                    }
+                    physics Physics {
+                    }
+                  }
+                }
+              ]
+              boundingObject Mesh {
+                url [
+                  "../split_parts/part_5.obj"
+                ]
+              }
+              physics Physics {
+              }
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject Mesh {
+          url [
+            "../split_parts/part_3.obj"
+          ]
+        }
+        physics Physics {
+        }
+      }
+    }
+    Solid {
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 0 0
+            }
+          }
+          geometry Mesh {
+            url [
+              "../split_parts/part_9.obj"
+            ]
+          }
+        }
+      ]
+      name "solid(2)"
+    }
+  ]
+  controller "41023105_HW2_controller"
+}
