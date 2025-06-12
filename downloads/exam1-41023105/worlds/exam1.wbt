@@ -1,0 +1,196 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5965550105929156 0.573157543378824 0.5617940457182132 2.1517026330357902
+  position -0.076936117559328 0.448225074440745 2.271221687105681
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  children [
+    DEF base Solid {
+      children [
+        DEF base Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 0
+              transparency 1
+            }
+          }
+          geometry Box {
+            size 1 0.1 0.1
+          }
+        }
+      ]
+      name "base"
+      boundingObject USE base
+    }
+    DEF joint1 HingeJoint {
+      jointParameters HingeJointParameters {
+        position 138.2280401188364
+        axis 0 0 1
+        anchor -0.5 0 0
+      }
+      device [
+        DEF motor RotationalMotor {
+          name "motor"
+        }
+      ]
+      endPoint DEF link1 Solid {
+        translation -0.4999973750129017 5.405823092882325e-06 0.09993144605609501
+        rotation 1.460724130654098e-05 -1.3305237517799634e-05 -0.9999999998047997 4.715221948139722
+        children [
+          Pose {
+            translation 0.2 0 0
+            children [
+              DEF link1_shape Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 1 0 0
+                  }
+                }
+                geometry Box {
+                  size 0.4 0.1 0.1
+                }
+              }
+            ]
+          }
+          DEF joint2 HingeJoint {
+            jointParameters HingeJointParameters {
+              position -138.228189181468
+              axis 0 0 1
+              anchor 0.4 0 0
+            }
+            endPoint DEF link2 Solid {
+              translation 0.39927941655654453 -0.0007169699138544144 0.09994698049442137
+              rotation 1.540957063679231e-05 -3.3394586802552483e-06 0.9999999998756965 5.322698333984531
+              children [
+                Pose {
+                  translation 0.3 0 0
+                  children [
+                    DEF link2_shape Shape {
+                      appearance Appearance {
+                        material Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Box {
+                        size 0.6 0.1 0.1
+                      }
+                    }
+                    Pose {
+                      translation 0 0.15 0
+                      rotation 0 0 1 1.57
+                      children [
+                        DEF extra_link Shape {
+                          appearance Appearance {
+                            material Material {
+                              diffuseColor 0 1 0
+                            }
+                          }
+                          geometry Box {
+                            size 0.3 0.1 0.1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+                DEF joint3 HingeJoint {
+                  jointParameters HingeJointParameters {
+                    position -0.001702773485813075
+                    axis 0 0 1
+                    anchor 0.6 0 0
+                  }
+                  endPoint DEF link3 Solid {
+                    translation 0.6 0 -0.1
+                    rotation 0 0 -1 1.5812257465406803
+                    children [
+                      Pose {
+                        translation 0.45 0 0
+                        children [
+                          DEF link3_shape Shape {
+                            appearance Appearance {
+                              material Material {
+                                diffuseColor 0 0 1
+                              }
+                            }
+                            geometry Box {
+                              size 0.9 0.1 0.1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                    name "link3"
+                    boundingObject Pose {
+                      translation 0.45 0 0
+                      children [
+                        USE link3_shape
+                      ]
+                    }
+                    physics Physics {
+                    }
+                    linearVelocity -0.1345321520784776 -0.0899801839034791 1.2937928240767631e-05
+                    angularVelocity 9.166505894566527e-07 5.7981755014626255e-06 0.361076187510606
+                  }
+                }
+              ]
+              name "link2"
+              boundingObject Group {
+                children [
+                  Pose {
+                    translation 0.3 0 0
+                    children [
+                      USE link2_shape
+                    ]
+                  }
+                  Pose {
+                    translation 0.3 0.15 0
+                    rotation 0 0 1 1.57
+                    children [
+                      USE extra_link
+                    ]
+                  }
+                ]
+              }
+              physics Physics {
+              }
+              linearVelocity -0.31975351654476436 -0.07549051194908307 -1.2886936664874538e-06
+              angularVelocity 1.5156621339145513e-05 -9.168112593844287e-05 -0.3817648487125861
+            }
+          }
+        ]
+        name "link1"
+        boundingObject Pose {
+          translation 0.2 0 0
+          children [
+            USE link1_shape
+          ]
+        }
+        physics Physics {
+        }
+        linearVelocity -0.2004546388221386 0.003843451898583327 -1.2237675999585873e-05
+        angularVelocity -4.83142619771994e-06 3.4286253277105896e-05 0.999991459108549
+      }
+    }
+    DEF joint4 HingeJoint {
+      jointParameters HingeJointParameters {
+        position -0.0018529886500860387
+        axis 0 0 1
+        anchor 0.5 0 0
+      }
+      endPoint SolidReference {
+        solidName "link3"
+      }
+    }
+  ]
+  controller "fourbar_controller"
+}
