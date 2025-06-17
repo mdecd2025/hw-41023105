@@ -1,0 +1,768 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5623984303897632 0.5699088606744341 0.599092560477844 2.0560327851975027
+  position -0.014084868557217044 -0.7962946947501953 5.479830152712956
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Robot {
+  translation 0 -0.59 0.26
+  children [
+    Pose {
+      children [
+        DEF sevent_segment Pose {
+          translation 0.22 0.22 0
+          children [
+            DEF Eighth Pose {
+              translation -2 0 0
+              children [
+                DEF A8 Shape {
+                  appearance Appearance {
+                    material DEF a8 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/a.obj"
+                    ]
+                  }
+                }
+                DEF B8 Shape {
+                  appearance Appearance {
+                    material DEF b8 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/b.obj"
+                    ]
+                  }
+                }
+                DEF C8 Shape {
+                  appearance Appearance {
+                    material DEF c8 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/c.obj"
+                    ]
+                  }
+                }
+                DEF D8 Shape {
+                  appearance Appearance {
+                    material DEF d8 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/d.obj"
+                    ]
+                  }
+                }
+                DEF E8 Shape {
+                  appearance Appearance {
+                    material DEF e8 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/e.obj"
+                    ]
+                  }
+                }
+                DEF F8 Shape {
+                  appearance Appearance {
+                    material DEF f8 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/f.obj"
+                    ]
+                  }
+                }
+                DEF G8 Shape {
+                  appearance Appearance {
+                    material DEF g8 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/g.obj"
+                    ]
+                  }
+                }
+              ]
+            }
+            DEF seventh Pose {
+              translation -1.6 0 0
+              children [
+                DEF A7 Shape {
+                  appearance Appearance {
+                    material DEF a7 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/a.obj"
+                    ]
+                  }
+                }
+                DEF B7 Shape {
+                  appearance Appearance {
+                    material DEF b7 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/b.obj"
+                    ]
+                  }
+                }
+                DEF C7 Shape {
+                  appearance Appearance {
+                    material DEF c7 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/c.obj"
+                    ]
+                  }
+                }
+                DEF D7 Shape {
+                  appearance Appearance {
+                    material DEF d7 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/d.obj"
+                    ]
+                  }
+                }
+                DEF E7 Shape {
+                  appearance Appearance {
+                    material DEF e7 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/e.obj"
+                    ]
+                  }
+                }
+                DEF F7 Shape {
+                  appearance Appearance {
+                    material DEF f7 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/f.obj"
+                    ]
+                  }
+                }
+                DEF G7 Shape {
+                  appearance Appearance {
+                    material DEF g7 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/g.obj"
+                    ]
+                  }
+                }
+              ]
+            }
+            DEF sixth Pose {
+              translation -1.2 0 0
+              children [
+                DEF A6 Shape {
+                  appearance Appearance {
+                    material DEF a6 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/a.obj"
+                    ]
+                  }
+                }
+                DEF B6 Shape {
+                  appearance Appearance {
+                    material DEF b6 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/b.obj"
+                    ]
+                  }
+                }
+                DEF C6 Shape {
+                  appearance Appearance {
+                    material DEF c6 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/c.obj"
+                    ]
+                  }
+                }
+                DEF D6 Shape {
+                  appearance Appearance {
+                    material DEF d6 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/d.obj"
+                    ]
+                  }
+                }
+                DEF E6 Shape {
+                  appearance Appearance {
+                    material DEF e6 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/e.obj"
+                    ]
+                  }
+                }
+                DEF F6 Shape {
+                  appearance Appearance {
+                    material DEF f6 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/f.obj"
+                    ]
+                  }
+                }
+                DEF G6 Shape {
+                  appearance Appearance {
+                    material DEF g6 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/g.obj"
+                    ]
+                  }
+                }
+              ]
+            }
+            DEF firth Pose {
+              translation -0.8 0 0
+              children [
+                DEF A5 Shape {
+                  appearance Appearance {
+                    material DEF a5 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/a.obj"
+                    ]
+                  }
+                }
+                DEF B5 Shape {
+                  appearance Appearance {
+                    material DEF b5 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/b.obj"
+                    ]
+                  }
+                }
+                DEF C5 Shape {
+                  appearance Appearance {
+                    material DEF c5 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/c.obj"
+                    ]
+                  }
+                }
+                DEF D5 Shape {
+                  appearance Appearance {
+                    material DEF d5 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/d.obj"
+                    ]
+                  }
+                }
+                DEF E5 Shape {
+                  appearance Appearance {
+                    material DEF e5 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/e.obj"
+                    ]
+                  }
+                }
+                DEF F5 Shape {
+                  appearance Appearance {
+                    material DEF f5 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/f.obj"
+                    ]
+                  }
+                }
+                DEF G5 Shape {
+                  appearance Appearance {
+                    material DEF g5 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/g.obj"
+                    ]
+                  }
+                }
+              ]
+            }
+            DEF fourth Pose {
+              translation -0.4 0 0
+              children [
+                DEF E4 Shape {
+                  appearance Appearance {
+                    material DEF e4 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/e.obj"
+                    ]
+                  }
+                }
+                DEF A4 Shape {
+                  appearance Appearance {
+                    material DEF a4 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/a.obj"
+                    ]
+                  }
+                }
+                DEF B4 Shape {
+                  appearance Appearance {
+                    material DEF b4 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/b.obj"
+                    ]
+                  }
+                }
+                DEF C4 Shape {
+                  appearance Appearance {
+                    material DEF c4 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/c.obj"
+                    ]
+                  }
+                }
+                DEF D4 Shape {
+                  appearance Appearance {
+                    material DEF d4 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/d.obj"
+                    ]
+                  }
+                }
+                DEF F4 Shape {
+                  appearance Appearance {
+                    material DEF f4 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/f.obj"
+                    ]
+                  }
+                }
+                DEF G4 Shape {
+                  appearance Appearance {
+                    material DEF g4 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/g.obj"
+                    ]
+                  }
+                }
+              ]
+            }
+            Pose {
+              translation -0.22 0.31 0
+              children [
+                DEF background Shape {
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Box {
+                    size 3.7 0.8 0.02
+                  }
+                }
+              ]
+            }
+            DEF first Group {
+              children [
+                DEF A1 Shape {
+                  appearance Appearance {
+                    material DEF a1 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/a.obj"
+                    ]
+                  }
+                }
+                DEF B1 Shape {
+                  appearance Appearance {
+                    material DEF b1 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/b.obj"
+                    ]
+                  }
+                }
+                DEF C1 Shape {
+                  appearance Appearance {
+                    material DEF c1 Material {
+                      diffuseColor 0 1 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/c.obj"
+                    ]
+                  }
+                }
+                DEF D1 Shape {
+                  appearance Appearance {
+                    material DEF d1 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/d.obj"
+                    ]
+                  }
+                }
+                DEF E1 Shape {
+                  appearance Appearance {
+                    material DEF e1 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/e.obj"
+                    ]
+                  }
+                }
+                DEF F1 Shape {
+                  appearance Appearance {
+                    material DEF f1 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/f.obj"
+                    ]
+                  }
+                }
+                DEF G1 Shape {
+                  appearance Appearance {
+                    material DEF g1 Material {
+                      diffuseColor 0 0 0
+                    }
+                  }
+                  geometry Mesh {
+                    url [
+                      "../cad/score_counter/split_parts/g.obj"
+                    ]
+                  }
+                }
+              ]
+            }
+            DEF second Pose {
+              translation 0.4 0 0
+              children [
+                DEF second Group {
+                  children [
+                    DEF A2 Shape {
+                      appearance Appearance {
+                        material DEF a2 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/a.obj"
+                        ]
+                      }
+                    }
+                    DEF B2 Shape {
+                      appearance Appearance {
+                        material DEF b2 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/b.obj"
+                        ]
+                      }
+                    }
+                    DEF C2 Shape {
+                      appearance Appearance {
+                        material DEF c2 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/c.obj"
+                        ]
+                      }
+                    }
+                    DEF D2 Shape {
+                      appearance Appearance {
+                        material DEF d2 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/d.obj"
+                        ]
+                      }
+                    }
+                    DEF E2 Shape {
+                      appearance Appearance {
+                        material DEF e2 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/e.obj"
+                        ]
+                      }
+                    }
+                    DEF F2 Shape {
+                      appearance Appearance {
+                        material DEF f2 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/f.obj"
+                        ]
+                      }
+                    }
+                    DEF G2 Shape {
+                      appearance Appearance {
+                        material DEF g2 Material {
+                          diffuseColor 0 0 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/g.obj"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            DEF third Pose {
+              translation 0.8 0 0
+              children [
+                DEF third Group {
+                  children [
+                    DEF A3 Shape {
+                      appearance Appearance {
+                        material DEF a3 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/a.obj"
+                        ]
+                      }
+                    }
+                    DEF B3 Shape {
+                      appearance Appearance {
+                        material DEF b3 Material {
+                          diffuseColor 0 0 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/b.obj"
+                        ]
+                      }
+                    }
+                    DEF C3 Shape {
+                      appearance Appearance {
+                        material DEF c3 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/c.obj"
+                        ]
+                      }
+                    }
+                    DEF D3 Shape {
+                      appearance Appearance {
+                        material DEF d3 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/d.obj"
+                        ]
+                      }
+                    }
+                    DEF E3 Shape {
+                      appearance Appearance {
+                        material DEF e3 Material {
+                          diffuseColor 0 0 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/e.obj"
+                        ]
+                      }
+                    }
+                    DEF F3 Shape {
+                      appearance Appearance {
+                        material DEF f3 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/f.obj"
+                        ]
+                      }
+                    }
+                    DEF G3 Shape {
+                      appearance Appearance {
+                        material DEF g3 Material {
+                          diffuseColor 0 1 0
+                        }
+                      }
+                      geometry Mesh {
+                        url [
+                          "../cad/score_counter/split_parts/g.obj"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  controller "seven_segment"
+  supervisor TRUE
+}
